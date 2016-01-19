@@ -9,3 +9,6 @@
   build_script: 
     - msbuild Sandbox.sln /p:Configuration=Release /t:Rebuild
         
+  test:
+    assemblies:
+      - '**\*box.dll'
