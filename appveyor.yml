@@ -4,6 +4,21 @@
     - master
 
   before_build:
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget install NUnitGo
+    - nuget delete NUnitGo
+    - nuget restore Sandbox.sln
     - nuget restore Sandbox.sln
 
   build_script: 
