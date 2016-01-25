@@ -4,6 +4,9 @@
     - master
 
   before_build:
+    - nuget restore TestSandbox1/TestSandbox1.sln
+    - nuget restore TestSandbox2/TestSandbox2.sln
+    - nuget restore TestSandbox3/TestSandbox3.sln
     - nuget restore Sandbox.sln
 
   build_script: 
