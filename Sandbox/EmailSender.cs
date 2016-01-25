@@ -5,6 +5,10 @@ namespace Sandbox
 {
     public static class EmailSender
     {
+        public static void Test()
+        {
+        }
+
         public static void Send()
         {
             var fromAddress = new MailAddress("Ololo@test.test");
