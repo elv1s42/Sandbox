@@ -2,17 +2,5 @@ language: csharp
 solution: Sandbox.sln
 install:
     - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
-    - nuget install NUnitGo
-    - nuget uninstall NUnitGo
+    - nuget local all -clear
     - nuget restore Sandbox.sln
