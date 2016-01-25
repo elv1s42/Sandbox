@@ -4,8 +4,6 @@
     - master
 
   before_build:
-    - nuget install NUnitGo
-    - nuget locals all -clear
     - nuget restore Sandbox.sln
 
   build_script: 
