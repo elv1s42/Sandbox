@@ -5,6 +5,8 @@
 
   before_build:
     - nuget restore Sandbox.sln
+    - nuget restore Sandbox.sln
+    - nuget restore Sandbox.sln
 
   build_script: 
     - msbuild Sandbox.sln /p:Configuration=Release /t:Rebuild
