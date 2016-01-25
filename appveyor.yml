@@ -5,20 +5,19 @@
 
   before_build:
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
+    - nuget uninstall NUnitGo
     - nuget install NUnitGo
-    - nuget delete NUnitGo
-    - nuget restore Sandbox.sln
+    - nuget uninstall NUnitGo
     - nuget restore Sandbox.sln
 
   build_script: 
