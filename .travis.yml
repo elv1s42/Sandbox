@@ -4,4 +4,10 @@ install:
     - nuget restore TestSandbox1/TestSandbox1.sln
     - nuget restore TestSandbox2/TestSandbox2.sln
     - nuget restore TestSandbox3/TestSandbox3.sln
+    - nuget restore TestSandbox1/TestSandbox4.sln
+    - nuget restore TestSandbox2/TestSandbox5.sln
+    - nuget restore TestSandbox3/TestSandbox6.sln
+    - nuget restore TestSandbox1/TestSandbox7.sln
+    - nuget restore TestSandbox2/TestSandbox8.sln
+    - nuget restore TestSandbox3/TestSandbox9.sln
     - nuget restore Sandbox.sln
