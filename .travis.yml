@@ -11,3 +11,5 @@ install:
     - nuget restore TestSandbox8/TestSandbox8.sln
     - nuget restore TestSandbox9/TestSandbox9.sln
     - nuget restore Sandbox.sln
+notifications:
+  email: false
