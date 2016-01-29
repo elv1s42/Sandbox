@@ -7,8 +7,8 @@
     <ProjectGuid>{AACDE6F0-61C7-4C09-8CF5-0F21EC4BE5BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestSandbox3</RootNamespace>
-    <AssemblyName>TestSandbox3</AssemblyName>
+    <RootNamespace>TestSandbox9</RootNamespace>
+    <AssemblyName>TestSandbox9</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
