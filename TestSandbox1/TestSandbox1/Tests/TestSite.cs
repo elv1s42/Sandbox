@@ -4,6 +4,7 @@ using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace TestSandbox1.Tests
 {
@@ -34,17 +35,23 @@ namespace TestSandbox1.Tests
             using (D)
             {
                 D.Navigate().GoToUrl(mailUrl);
-                var email = D.FindElement(By.Id("fe_text")).Text;
+            
+                var wait = new WebDriverWait(D, TimeSpan.FromSeconds(30));
+                wait.Until(ExpectedConditions.ElementIsVisible(By.Id("fe_text")));
+
+                D.FindElement(By.Id("fe_text")).Click();
+
+                var email = D.FindElement(By.Id("fe_text")).GetAttribute("value");
                 var username = email.Split('@').First();
                 var password = username + "www12342";
                 Console.WriteLine("Email = '{0}'", email);
                 //D.Navigate().GoToUrl(sportsUrl);
                 //Thread.Sleep(10000);
-                D.Navigate().GoToUrl(gitUrl);
+                /*D.Navigate().GoToUrl(gitUrl);
                 D.FindElement(By.Id("user_login")).SendKeys(username);
                 D.FindElement(By.Id("user_email")).SendKeys(email);
                 D.FindElement(By.Id("user_password")).SendKeys(password);
-
+                */
                 Thread.Sleep(5000);
             }
         }
