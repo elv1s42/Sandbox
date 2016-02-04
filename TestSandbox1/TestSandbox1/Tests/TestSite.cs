@@ -30,7 +30,7 @@ namespace TestSandbox1.Tests
         {
             Console.WriteLine("Test started!");
             const string mailUrl = "https://10minutemail.net";
-            //const string sportsUrl = "https://sports.ru/";
+            const string sportsUrl = "https://sports.ru/";
             const string gitUrl = "https://github.com/join";
             using (D)
             {
@@ -52,6 +52,15 @@ namespace TestSandbox1.Tests
                 D.FindElement(By.Id("user_email")).SendKeys(email);
                 D.FindElement(By.Id("user_password")).SendKeys(password);
                 */
+                D.Navigate().GoToUrl(sportsUrl);
+
+                wait.Until(ExpectedConditions.ElementIsVisible(By.PartialLinkText("Зарегистрироваться")));
+
+                D.FindElement(By.PartialLinkText("Зарегистрироваться")).Click();
+
+
+                D.Navigate().GoToUrl(mailUrl);
+
                 Thread.Sleep(5000);
             }
         }
