@@ -22,7 +22,7 @@ namespace TestSandbox1.Tests
         [TearDown]
         public void TeardownTest()
         {
-            D.Quit();
+            //D.Quit();
         }
 
         [Test]
@@ -32,8 +32,8 @@ namespace TestSandbox1.Tests
             const string mailUrl = "https://10minutemail.net";
             const string sportsUrl = "https://sports.ru/";
             const string gitUrl = "https://github.com/join";
-            using (D)
-            {
+            //using (D)
+            //{
                 D.Navigate().GoToUrl(mailUrl);
             
                 var wait = new WebDriverWait(D, TimeSpan.FromSeconds(30));
@@ -43,7 +43,7 @@ namespace TestSandbox1.Tests
 
                 var email = D.FindElement(By.Id("fe_text")).GetAttribute("value");
                 var username = email.Split('@').First();
-                var password = username + "www12342";
+                var password = "www12342";
                 Console.WriteLine("Email = '{0}'", email);
                 //D.Navigate().GoToUrl(sportsUrl);
                 //Thread.Sleep(10000);
@@ -55,14 +55,31 @@ namespace TestSandbox1.Tests
                 D.Navigate().GoToUrl(sportsUrl);
 
                 wait.Until(ExpectedConditions.ElementIsVisible(By.PartialLinkText("Зарегистрироваться")));
-
                 D.FindElement(By.PartialLinkText("Зарегистрироваться")).Click();
 
+                //wait.Until(ExpectedConditions.ElementIsVisible(By.Name("login")));
 
-                D.Navigate().GoToUrl(mailUrl);
+                Console.WriteLine("1 " + D.FindElements(By.ClassName("popup")).Count);
+                Console.WriteLine("2 " + D.FindElements(By.ClassName("popup")).First().FindElements(By.Name("login")).Count);
+                Console.WriteLine("3 " + D.FindElements(By.ClassName("popup")).Count(x => x.GetAttribute("value").Contains("Ваш e-mail")));
+                Console.WriteLine("4 " + D.FindElements(By.ClassName("popup")).Count(x => x.GetAttribute("placeholder").Contains("Ваш e-mail")));
 
-                Thread.Sleep(5000);
-            }
+                D.FindElement(By.Name("login")).Click();
+                D.FindElement(By.Name("login")).SendKeys(email);
+                D.FindElement(By.Name("nick")).Click();
+                D.FindElement(By.Name("nick")).SendKeys(username);
+                D.FindElement(By.Name("password")).Click();
+                D.FindElement(By.Name("rassword")).SendKeys(password);
+                D.FindElement(By.Name("repasswd")).Click();
+                D.FindElement(By.Name("repasswd")).SendKeys(password);
+
+                D.FindElements(By.TagName("button")).First(x => x.GetAttribute("value").Contains("Зарегистрироваться")).Click();
+                
+
+                //D.Navigate().GoToUrl(mailUrl);
+
+                //Thread.Sleep(5000);
+            //}
         }
     }
 }
