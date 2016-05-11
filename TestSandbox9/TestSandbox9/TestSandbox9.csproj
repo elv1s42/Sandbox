@@ -32,16 +32,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.2.0\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NUnitGoCore, Version=2.1.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnitGo.2.1.4\lib\net45\NUnitGoCore.dll</HintPath>
+    <Reference Include="NUnitGoCore, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitGo.2.1.5\lib\net45\NUnitGoCore.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NUnitGoReport, Version=2.1.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnitGo.2.1.4\lib\net45\NUnitGoReport.exe</HintPath>
+    <Reference Include="NUnitGoReport, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitGo.2.1.5\lib\net45\NUnitGoReport.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ScreenshotTaker, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
@@ -62,7 +62,13 @@
     <Compile Include="SomeClass.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NUnitGoConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
