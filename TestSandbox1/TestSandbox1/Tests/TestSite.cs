@@ -34,7 +34,7 @@ namespace TestSandbox1.Tests
             const string sportsUrl = "https://sports.ru/";
             using (D)
             {
-                D.Navigate().GoToUrl(mailUrl);
+                /*D.Navigate().GoToUrl(mailUrl);
 
                 var wait = new WebDriverWait(D, TimeSpan.FromSeconds(30));
                 wait.Until(ExpectedConditions.ElementIsVisible(By.Id("fe_text")));
@@ -49,7 +49,7 @@ namespace TestSandbox1.Tests
                 
                 D.Navigate().GoToUrl(mailUrl);
 
-                Thread.Sleep(5000);
+                Thread.Sleep(5000);*/
             }
         }
     }
