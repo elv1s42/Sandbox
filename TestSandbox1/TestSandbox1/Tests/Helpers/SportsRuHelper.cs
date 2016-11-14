@@ -11,7 +11,7 @@ namespace TestSandbox1.Tests.Helpers
         {
             d.Navigate().GoToUrl(sportsUrl);
 
-            wait.Until(ExpectedConditions.ElementIsVisible(By.PartialLinkText("Зарегистрироваться")));
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.PartialLinkText("Зарегистрироваться")));
             d.FindElement(By.PartialLinkText("Зарегистрироваться")).Click();
 
             //wait.Until(ExpectedConditions.ElementIsVisible(By.Name("login")));

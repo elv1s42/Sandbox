@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using NunitGo;
+using NUnitGoCore.Attributes;
 using Sandbox;
 
 namespace Tests
