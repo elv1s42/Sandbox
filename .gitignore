@@ -231,3 +231,6 @@ $RECYCLE.BIN/
 *.lnk
 README.md
 README.md
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
