@@ -13,6 +13,15 @@
     - nuget restore TestSandbox7/TestSandbox7.sln
     - nuget restore TestSandbox8/TestSandbox8.sln
     - nuget restore TestSandbox9/TestSandbox9.sln
+    - nuget restore All/TestSandbox1/TestSandbox1.sln
+    - nuget restore All/TestSandbox2/TestSandbox2.sln
+    - nuget restore All/TestSandbox3/TestSandbox3.sln
+    - nuget restore All/TestSandbox4/TestSandbox4.sln
+    - nuget restore All/TestSandbox5/TestSandbox5.sln
+    - nuget restore All/TestSandbox6/TestSandbox6.sln
+    - nuget restore All/TestSandbox7/TestSandbox7.sln
+    - nuget restore All/TestSandbox8/TestSandbox8.sln
+    - nuget restore All/TestSandbox9/TestSandbox9.sln
     - nuget restore Sandbox.sln
 
   build_script: 
