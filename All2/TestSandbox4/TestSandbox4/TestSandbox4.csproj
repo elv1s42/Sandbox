@@ -37,20 +37,48 @@
       <HintPath>..\packages\SpecFlow.CustomPlugin.2.1.0\lib\net45\Gherkin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ghpr.Core, Version=0.2.5.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ghpr.Core.0.2.5.1\lib\net452\Ghpr.Core.dll</HintPath>
+    <Reference Include="Ghpr.Core, Version=0.4.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.Core.0.4.7.1\lib\net452\Ghpr.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ghpr.SpecFlowPlugin">
-      <HintPath>..\packages\Ghpr.SpecFlowPlugin.0.2.5.1\lib\net452\Ghpr.SpecFlowPlugin.dll</HintPath>
+    <Reference Include="Ghpr.MSTest, Version=0.4.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.MSTest.0.4.7.1\lib\net452\Ghpr.MSTest.exe</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Ghpr.NUnit, Version=0.4.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.NUnit.0.4.7.1\lib\net452\Ghpr.NUnit.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="Ghpr.SpecFlowPlugin, Version=0.4.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.SpecFlowPlugin.0.4.7.1\lib\net452\Ghpr.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.6.1\lib\Mono.Cecil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit-agent, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.6.1\lib\nunit-agent.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit-agent-x86, Version=3.6.1.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\NUnit.Engine.3.6.1\lib\nunit-agent-x86.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.engine, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.6.1\lib\nunit.engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.engine.api, Version=3.0.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.6.1\lib\nunit.engine.api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NUnitGoCore, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
@@ -95,6 +123,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Ghpr.Core.Settings.json" />
+    <None Include="Ghpr.MSTest.Settings.json" />
+    <None Include="Ghpr.NUnit.Settings.json" />
+    <None Include="Ghpr.SpecFlow.Settings.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
