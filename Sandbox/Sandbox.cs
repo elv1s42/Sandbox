@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using NUnitGoCore.Attributes;
 
 namespace Sandbox
 {
     [TestFixture]
     public class Sandbox
     {
-        [Test, NunitGoAction("ab396a20-b3a0-4920-8bc4-26545e9f3802")]
+        [Test]
         public void Test()
         {
             //EmailSender.Send();
