@@ -46,41 +46,29 @@
       <HintPath>..\packages\Ghpr.NUnit.0.9.1.1\lib\net452\Ghpr.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.Engine.3.8.0\lib\Mono.Cecil.dll</HintPath>
+      <HintPath>..\packages\NUnit.Engine.3.9.0\lib\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="nunit-agent, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.Engine.3.8.0\lib\nunit-agent.exe</HintPath>
+    <Reference Include="nunit-agent, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.9.0\lib\nunit-agent.exe</HintPath>
     </Reference>
-    <Reference Include="nunit-agent-x86, Version=3.8.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\NUnit.Engine.3.8.0\lib\nunit-agent-x86.exe</HintPath>
+    <Reference Include="nunit-agent-x86, Version=3.9.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\NUnit.Engine.3.9.0\lib\nunit-agent-x86.exe</HintPath>
     </Reference>
-    <Reference Include="nunit.engine, Version=3.8.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.Engine.3.8.0\lib\nunit.engine.dll</HintPath>
+    <Reference Include="nunit.engine, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Engine.3.9.0\lib\nunit.engine.dll</HintPath>
     </Reference>
     <Reference Include="nunit.engine.api, Version=3.0.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.Engine.3.8.0\lib\nunit.engine.api.dll</HintPath>
+      <HintPath>..\packages\NUnit.Engine.3.9.0\lib\nunit.engine.api.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="NUnitGoCore, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnitGo.2.1.5\lib\net45\NUnitGoCore.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NUnitGoReport, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnitGo.2.1.5\lib\net45\NUnitGoReport.exe</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="ScreenshotTaker, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ScreenshotTaker.1.0.3\lib\net45\ScreenshotTaker.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="Selenium.WebDriverBackedSelenium, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\TestSandbox1\TestSandbox1\Libs\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -89,46 +77,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.Selenium.Core, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\TestSandbox1\TestSandbox1\Libs\ThoughtWorks.Selenium.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\TestSandbox1\TestSandbox1\Libs\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\TestSandbox1\TestSandbox1\Libs\WebDriver.Support.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\Helpers\SportsRuHelper.cs" />
-    <Compile Include="Tests\TestSite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Ghpr.Core.Settings.json" />
     <None Include="Ghpr.NUnit.Settings.json" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="chromedriver.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\Selenium.WebDriverBackedSelenium.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\ThoughtWorks.Selenium.Core.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\WebDriver.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Libs\WebDriver.Support.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
@@ -141,7 +98,6 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
     <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
   </Target>
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

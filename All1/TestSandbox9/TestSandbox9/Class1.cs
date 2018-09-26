@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using NUnitGoCore.Attributes;
 
 namespace TestSandbox9
 {
@@ -16,7 +15,7 @@ namespace TestSandbox9
             someClass1.ConsoleWrite();
         }
 
-        [Test, NunitGoAction]
+        [Test]
         public void Test2()
         {
             var someClass2 = new SomeClass();

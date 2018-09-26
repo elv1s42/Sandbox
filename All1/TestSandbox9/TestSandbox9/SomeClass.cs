@@ -8,7 +8,7 @@ namespace TestSandbox9
 
         public SomeClass()
         {
-            Console.WriteLine("Name inside constuctor: " + Name);
+            Console.WriteLine("Name inside constructor: " + Name);
         }
 
         public void ConsoleWrite()
